@@ -1,20 +1,20 @@
 class Ontomics < Formula
   desc "MCP server that extracts domain ontologies from Python codebases"
   homepage "https://github.com/EtienneChollet/ontomics"
-  version "0.2.6"
+  version "0.2.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/EtienneChollet/ontomics/releases/download/v0.2.6/ontomics-aarch64-apple-darwin.tar.xz"
-      sha256 "ef1e6361087cee7749d312a003fb999289933577374613020c0a6fe29550bf2b"
+      url "https://github.com/EtienneChollet/ontomics/releases/download/v0.2.7/ontomics-aarch64-apple-darwin.tar.xz"
+      sha256 "81a289b858eab866351912031321d17e12ab89b466a325fc7aee707cc9d9c1e4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/EtienneChollet/ontomics/releases/download/v0.2.6/ontomics-x86_64-apple-darwin.tar.xz"
-      sha256 "8845605d73af28e6c0b1414e56e415e5c804e5be33128a85147ee0186482d0f1"
+      url "https://github.com/EtienneChollet/ontomics/releases/download/v0.2.7/ontomics-x86_64-apple-darwin.tar.xz"
+      sha256 "6057afc81a3b23fba5156e8fc9699a3a9a1f2160f38a50e5c420118f7312c58f"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/EtienneChollet/ontomics/releases/download/v0.2.6/ontomics-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "4a9c878eb727f8e6972a97e1f89fea7d27e6cd9e442b208d17dee2c22a81d41d"
+    url "https://github.com/EtienneChollet/ontomics/releases/download/v0.2.7/ontomics-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "52e81a6ced0b4767a50debd54bc3435caf0d88fa1ea65ac6915b1eaa670716de"
   end
   license "MIT"
 
