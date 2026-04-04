@@ -5,16 +5,16 @@ class Ontomics < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/EtienneChollet/ontomics/releases/download/v0.2.7/ontomics-aarch64-apple-darwin.tar.xz"
-      sha256 "81a289b858eab866351912031321d17e12ab89b466a325fc7aee707cc9d9c1e4"
+      sha256 "ec40fbf9c36447b3c4aa2f9372e7851126435c133d611654b7f8bcbf960aad5b"
     end
     if Hardware::CPU.intel?
       url "https://github.com/EtienneChollet/ontomics/releases/download/v0.2.7/ontomics-x86_64-apple-darwin.tar.xz"
-      sha256 "6057afc81a3b23fba5156e8fc9699a3a9a1f2160f38a50e5c420118f7312c58f"
+      sha256 "d3dfb2181a2225b445ca238b2915f6ecdec7b5f4941ecd2f627566c613a34fc7"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/EtienneChollet/ontomics/releases/download/v0.2.7/ontomics-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "52e81a6ced0b4767a50debd54bc3435caf0d88fa1ea65ac6915b1eaa670716de"
+    sha256 "88ffd0d407421293aaa800f6b020d5f4bc3bf67621f3768538863178f87467a9"
   end
   license "MIT"
 
